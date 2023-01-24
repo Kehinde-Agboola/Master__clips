@@ -10,7 +10,7 @@ export class ModalComponent implements OnInit {
   @Input() modalID = ''
 
   constructor(public modal: ModalService, public el: ElementRef) {
-    console.log(el)
+    document.body.append(this.el.nativeElement)
 
    }
 
